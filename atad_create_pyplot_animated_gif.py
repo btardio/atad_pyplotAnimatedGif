@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 get_ipython().run_line_magic('matplotlib', 'auto')
 
 import pandas as pd
@@ -62,21 +59,15 @@ def setupplt(xlist, ylist):
     axes.grid(b=True, axis='y') # turn the grid on
 
 
-# In[2]:
-
 
 # create x axis
 xintervals = [x for x in range(1,N_INTERVALS+1)]
 
 
-# In[3]:
-
 
 # create y axis
 sales = [ x*10*(1+random.random()) for x in range(1,N_INTERVALS+1) ]
 
-
-# In[4]:
 
 
 # turn off interactive plotting so we don't see all of the images in a jupyter notebook
@@ -157,19 +148,6 @@ iostream.close()
 imageio.mimsave('movie.gif', images)
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
